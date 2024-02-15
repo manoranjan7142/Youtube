@@ -1,0 +1,88 @@
+/* .container_libraryPage{
+    border-bottom:1px solid grey ;
+    padding: 1rem 2rem;
+    color: aliceblue;
+}
+.title_container_LibraryPage{
+    margin: 0.5rem 4rem;
+}
+
+.container_videoList_LibraryPage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    max-height: 80vh; 
+    overflow-y: auto; 
+}
+Comes from App.css 
+.container_Pages_App{
+    display: flex;
+    background-color: rgb(19,19,19);
+  }
+  .container2_Pages_App{
+    width: calc(100vw - 5rem);
+    height: calc(100vh - 3.65rem);
+    border-top: 2px solid rgba(243, 6, 6, 0.963);
+    overflow: auto;
+  }
+  */
+/* Container for the entire app */
+
+/* code copy from chart gpt */
+.container_Pages_App {
+    display: flex;
+  }
+  .container2_Pages_App {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styles for each library page container */
+  .container_libraryPage {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* Styles for the title of each library page */
+  .title_container_LibraryPage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Styles for the video list container */
+  
+  /* Additional styling for specific icons */
+  .title_container_LibraryPage{
+    margin: 0.5rem 4rem;
+    color: #ccc;
+}
+  /* Styles for the video list container */
+.container_videoList_LibraryPage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Style for each video item within the container */
+  .videoItem {
+    /* Add your styles for each video item here */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .container_videoList_LibraryPage {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  }
+  .title_container_LibraryPage b{
+    margin:  auto 0.5rem;
+    padding:  auto 0.5rem;
+    font-size: medium;
+}
